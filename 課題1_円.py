@@ -1,12 +1,13 @@
 class Circle:
     def __init__(self, radius, area, perimeter):
+        area = (radius ** 2 * 3.14)
+        perimeter = (radius * 2 * 3.14)
+
         self.radius = radius
         self.area = area
         self.perimeter = perimeter
 
-        self.area = self.radius ** 2 * 3.14
-        self.perimeter = radius * 2 * 3.14
-
+        self.radius(1)
 
 circle1 = Circle(radius=1)
 print(circle1.area())  # 3.14
